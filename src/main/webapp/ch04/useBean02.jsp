@@ -4,9 +4,9 @@
 <title>Action Tag</title>
 </head>
 <body>
-	<jsp:useBean id="bean" class="ch04.com.dao.Calculator" />
+	<jsp:useBean id="lsy" class="ch04.com.dao.Calculator" />
 	<%
-		int m = bean.process(5);
+		int m = lsy.process(5);
 		out.print("5의 3제곱 :  " + m);
 	%>
 </body>
