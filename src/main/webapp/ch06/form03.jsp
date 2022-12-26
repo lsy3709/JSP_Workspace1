@@ -22,7 +22,7 @@
 		<p>	취미 : 독서<input type="checkbox" name="hobby1" checked>
 				운동<input type="checkbox" name="hobby2"> 
 				영화<input type="checkbox" name="hobby3">
-		<p>	<textarea name="comment" cols="30" rows="3"	placeholder="가입인사를 입력해주세요"></textarea>
+		<p>	<textarea name="comment" cols="30" rows="10"	placeholder="가입인사를 입력해주세요"></textarea>
 		<p>	<input type="submit" value="가입하기"> 
 			<input type="reset"  value="다시쓰기">
 	</form>

@@ -6,7 +6,7 @@
 <body>	   
 	<p>이 페이지는 5초마다 새로고침 됩니다.     
 		<%
-			response.setIntHeader("Refresh", 5);
+			response.setIntHeader("Refresh", 30);
 		%>
 	<p>	<%=(new java.util.Date())%>
 </body>

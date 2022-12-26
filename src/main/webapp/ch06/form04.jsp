@@ -19,9 +19,9 @@
 			<input type="text" maxlength="4" size="4" name="phone3">
 		<p>	성별 : <input type="radio" name="sex" value="남성" checked>남성 
 				<input	type="radio" name="sex" value="여성">여성
-		<p>	취미 : 독서<input type="checkbox" name="hobby1" checked>
-				운동<input type="checkbox" name="hobby2" > 
-				영화<input type="checkbox" name="hobby3">
+		<p>	취미 : 독서<input type="checkbox" name="hobby1" value="독서" checked>
+				운동<input type="checkbox" name="hobby2" value="운동" > 
+				영화<input type="checkbox" name="hobby3" value="영화">
 		<p>	<textarea name="comment" cols="30" rows="3"	placeholder="가입인사를 입력해주세요"></textarea>
 		<p>	<input type="submit" value="가입하기"> 
 			<input type="reset" 	value="다시쓰기">

@@ -9,11 +9,11 @@
 		<p>	아이디 : <input type="text" name="id"> <input type="button" value="아이디 중복검사">
 		<p>	비밀번호 : <input type="password" name="passwd">
 		<p>	이름 : <input type="text" name="name">
-		<p>	연락처 : <select name="phone1">
-				<option value="010">010</option>
+		<p>	연락처 : <select name="phone1" size="3" multiple>
+				<option value="010" selected>010</option>
 				<option value="011">011</option>
-				<option value="016">016</option>
-				<option value="017">017</option>
+				<option value="016" disabled>016</option>
+				<option value="017" disabled>017</option>
 				<option value="019">019</option>
 			</select> - <input type="text" maxlength="4" size="4" name="phone2"> -
 			<input type="text" maxlength="4" size="4" name="phone3">
