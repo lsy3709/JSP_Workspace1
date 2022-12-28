@@ -50,7 +50,7 @@
 	<h3>회원 가입</h3>
 	<form action="validation05_process.jsp" name="Member" method="post">
 		<p>	아이디 : <input type="text" name="id">
-		<p>	비밀번호 : <input type="password" name="passwd">
+		<p>	비밀번호 : <input type="text" name="passwd">
 		<p>	이름 : <input type="text" name="name">
 		<p>	연락처 : <select name="phone1">
 				<option value="010">010</option>
