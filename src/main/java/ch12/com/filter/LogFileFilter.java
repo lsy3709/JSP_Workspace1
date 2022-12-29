@@ -12,25 +12,26 @@ public class LogFileFilter implements Filter  {
 	
 	PrintWriter writer;
 
-	public void init(FilterConfig filterConfig) throws ServletException {		
+	public void init(FilterConfig filterConfig) throws ServletException {
+		
 		String filename = filterConfig.getInitParameter("filename");
-        if(filename==null) throw new ServletException("·Î±× ÆÄÀÏÀÇ ÀÌ¸§À» Ã£À» ¼ö ¾ø½À´Ï´Ù.");
+        if(filename==null) throw new ServletException("ë¡œê·¸ íŒŒì¼ì˜ ì´ë¦„ì„ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
         try {
             writer = new PrintWriter(new FileWriter(filename, true), true);
         } catch (IOException e) {
-            throw new ServletException("·Î±× ÆÄÀÏÀ» ¿­ ¼ö ¾ø½À´Ï´Ù.");
+            throw new ServletException("ë¡œê·¸ íŒŒì¼ì„ ì—´ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
         }
 	}
 	
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain filterChain)	throws IOException, ServletException {			
-		writer.printf("ÇöÀçÀÏ½Ã : %s %n",  getCurrentTime());
+		writer.printf("í˜„ì¬ì¼ì‹œ : %s %n",  getCurrentTime());
 		String clientAddr = request.getRemoteAddr();
-		writer.printf("Å¬¶óÀÌ¾ğÆ® ÁÖ¼Ò : %s %n", clientAddr);
+		writer.printf("í´ë¼ì´ì–¸íŠ¸ ì£¼ì†Œ : %s %n", clientAddr);
        
         filterChain.doFilter(request, response);    
 
         String contentType = response.getContentType();
-        writer.printf("¹®¼­ÀÇ ÄÜÅÙÃ÷ À¯Çü : %s %n", contentType);
+        writer.printf("ë¬¸ì„œì˜ ì½˜í…ì¸  ìœ í˜• : %s %n", contentType);
         writer.println("----------------------------------------------");
 	}
 

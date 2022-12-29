@@ -22,7 +22,7 @@
 			out.println("설정된 세션 값 [ " + i + " ] : " + value + "<br>");
 		}
 
-		session.removeAttribute("userID");
+		session.removeAttribute("userPW");
 	%>
 
 	<p> <h4>----- 세션을 삭제한 후 -----</h4>

@@ -30,36 +30,36 @@
 		<exception-type>java.lang.Exception</exception-type>
 		<location>/ch11/exceptionType_error.jsp</location>
 	</error-page>
-<!--  예제12-1
-	<filter>
+<!--  예제12-1-->	
+	<!-- <filter>
 		<filter-name>Filter01</filter-name>
 		<filter-class>ch12.com.filter.AuthenFilter</filter-class>
 	</filter>
 	<filter-mapping>
 		<filter-name>Filter01</filter-name>
 		<url-pattern>/ch12/filter01_process.jsp</url-pattern>
-	</filter-mapping>
--->		
-<!-- 예제12-2
-	<filter>
+	</filter-mapping> -->
+	
+<!-- 예제12-2-->	
+	<!-- <filter>
 		<filter-name>Filter02</filter-name>
 		<filter-class>ch12.com.filter.InitParamFilter</filter-class>
 		<init-param>
-			<param-name>param1</param-name>
+			<param-name>id22</param-name>
 			<param-value>admin</param-value>
 		</init-param>
 		<init-param>
-			<param-name>param2</param-name>
+			<param-name>passwd22</param-name>
 			<param-value>1234</param-value>
 		</init-param>
 	</filter>
 	<filter-mapping>
 		<filter-name>Filter02</filter-name>
 		<url-pattern>/ch12/filter02_process.jsp</url-pattern>
-	</filter-mapping>
--->	
+	</filter-mapping> -->
+
 <!-- 예제12-3 -->	
-	<!-- <filter>
+	 <filter>
 		<filter-name>Filter02_2</filter-name>
 		<filter-class>ch12.com.filter.LogFileFilter</filter-class>
 		<init-param>
@@ -67,11 +67,13 @@
 			<param-value>c:\\logs\\monitor.log</param-value>
 		</init-param>
 	</filter>
+	
 	<filter-mapping>
 		<filter-name>Filter02_2</filter-name>
 		<url-pattern>/ch12/filter02_process.jsp</url-pattern>
 	</filter-mapping>
 	
+	<!--
 	<servlet>
 		<servlet-name>myController</servlet-name>
  		<servlet-class>ch18.com.controller.ControllerServlet</servlet-class>
