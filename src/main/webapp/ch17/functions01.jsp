@@ -7,7 +7,7 @@
 <body>
 	<p>java 문자열 검색
 	<p>Hello, Java Server Pages! => ${fn:contains("Hello, Java Server Pages!", "java")}
-	<p>hello, java server pages! => ${fn:containsIgnoreCase("hello, java server pages!", "java")}
+	<p>hello, java server pages! => ${fn:containsIgnoreCase("hello, java server pages!", "Java")}
 </body>
 </html>
 

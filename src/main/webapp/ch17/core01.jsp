@@ -6,6 +6,8 @@
 </head>
 <body>
 	browser 변수 값 설정
+	<%-- EL 표기법 ${해당 변수의 값을 가져온다 } --%>
+	<%-- <%= 변수의 값을 가져온다.  %> --%>
 	<c:set var="browser" value="${header['User-Agent']}" />
 	<br>
 	<c:out value="${browser}" />

@@ -10,6 +10,7 @@
 		String number = request.getParameter("number");
 	%>
 	<c:set var="number" value="<%=number%>" />
+	
 	<c:choose>
 		<c:when test="${number%2==0}">
 			<c:out value="${number}" />은 짝수입니다.

@@ -13,12 +13,12 @@
 		String passwd = request.getParameter("passwd");		
 	%>
 	<sql:setDataSource var="dataSource"
-		url="jdbc:mysql://localhost:3306/JSPBookDB"
+		url="jdbc:mysql://localhost:3306/WebMarketDB"
 		driver="com.mysql.jdbc.Driver" user="root" password="1234" />
 
 
 	<sql:update dataSource="${dataSource}" var="resultSet">
-		DELETE FROM member where id =? and passwd =?
+		DELETE FROM member2 where id =? and passwd =?
 		<sql:param value="<%=id%>" />		
 		<sql:param value="<%=passwd%>" />		
 	</sql:update>
