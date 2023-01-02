@@ -73,7 +73,7 @@
 		<url-pattern>/ch12/filter02_process.jsp</url-pattern>
 	</filter-mapping>
 	
-	<!--
+
 	<servlet>
 		<servlet-name>myController</servlet-name>
  		<servlet-class>ch18.com.controller.ControllerServlet</servlet-class>
@@ -81,5 +81,6 @@
  	<servlet-mapping>
 		 <servlet-name>myController</servlet-name>
  		<url-pattern>/ch18/ControllerServlet</url-pattern>
-	 </servlet-mapping>	 -->
+	 </servlet-mapping>
+	 
 </web-app>
